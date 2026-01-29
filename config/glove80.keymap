@@ -99,7 +99,7 @@
 
         base {
             bindings = <
-    &ug ___ &ug ___ &ug ___  &ug ___  &ug ___                                                                &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+    &ug GREEN &ug GREEN &ug GREEN &ug GREEN  &ug GREEN                                                &ug GREEN  &ug GREEN  &ug GREEN  &ug GREEN  &ug GREEN
     &ug ___ CAPSL   CAPSL    CAPSL    CAPSL    CAPSL                                                  CAPSL  CAPSL    CAPSL    CAPSL    CAPSL    &ug ___
     &ug ___ CAPSL   CAPSL    CAPSL    CAPSL    CAPSL                                                  CAPSL  CAPSL    CAPSL    CAPSL    &ug ___  &ug ___
     &ug ___ CAPSL   CAPSL    CAPSL    CAPSL    CAPSL                                                  CAPSL  CAPSL    CAPSL    CAPSL    CAPSL    &ug ___
@@ -111,7 +111,7 @@
 
         lower {
             bindings = <
-    &ug ___    &ug ___  &ug ___    &ug ___    &ug ___                                                                                 &ug ___  &ug ___     &ug ___    &ug ___     &ug ___
+    &ug BLUE    &ug BLUE  &ug BLUE    &ug BLUE    &ug BLUE                                                                    &ug BLUE  &ug BLUE     &ug BLUE    &ug BLUE     &ug BLUE
     &ug PURPLE &ug PINK &ug PINK   &ug   PINK &ug   PINK &ug PINK                                                             &ug ___ NUMI     &ug ORANGE  &ug ORANGE &ug ORANGE  &ug RED
     &ug PURPLE &ug ___  &ug ___    &ug ORANGE &ug ___    &ug ___                                                              &ug ___ NUML     NUML        NUML       &ug ORANGE  &ug ___
     &ug PURPLE &ug ___  &ug ORANGE &ug    RED &ug ORANGE &ug ___                                                              &ug ___ NUML     NUML        NUML       &ug ORANGE  &ug ___
@@ -123,7 +123,7 @@
 
         symbols {
             bindings = <
-                &ug ___  &ug ___  &ug ___ &ug ___  &ug ___                                                                      &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug PINK  &ug PINK  &ug PINK &ug PINK  &ug PINK                                                        &ug PINK  &ug PINK  &ug PINK  &ug PINK  &ug PINK
                 &ug ___  &ug ___  &ug ___ &ug ___  &ug ___  &ug ___                                                    &ug PINK &ug PINK &ug PINK &ug PINK &ug PINK &ug ___
                 &ug ___  &ug BLUE &ug ___ &ug BLUE &ug BLUE &ug BLUE                                                   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug BLUE
                 &ug ___  &ug BLUE &ug ___ &ug ___  &ug ___  &ug BLUE                                                   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
@@ -413,7 +413,7 @@
                            &kp TAB     &kp Q    &kp W     &kp E      &kp R   &kp T                                                                                  &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
  &EscapeAndHyper LA(LG(LCTRL)) ESC     &kp A    &kp S     &kp D      &kp F   &kp G                                                                                  &kp H   &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
                          &kp GRAVE     &kp Z    &kp X     &kp C      &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower          &kp RCTRL  &mo LAYER_Mouse  &kp RSHFT   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
-              &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC   &kp LALT  &kp LGUI  &mo LAYER_Symbols          &kp RET  &kp SPACE          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
+              &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT           &kp BSPC   &kp LALT  &kp LGUI  &mo LAYER_Symbols        &kp SPACE    &kp RET          &kp UP   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
 
