@@ -420,12 +420,77 @@
 
         layer_Lower {
             bindings = <
-         &kp C_BRI_DN   &kp C_BRI_UP      &kp C_PREV      &kp C_NEXT         &kp C_PP                                                                                                                           &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none  &kp PAUSE_BREAK
-                &none  &kp LS(GRAVE)           &none           &none            &none          &none                                                                                                  &none          &none         &none         &none   &none  &kp PRINTSCREEN
-                &none      &kp GRAVE        &kp HOME    &kp UP_ARROW          &kp END  &kp LS(EQUAL)                                                                                              &kp GRAVE  &kp LS(GRAVE)       &kp DOT      &kp FSLH   &none   &kp SCROLLLOCK
-                &none          &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp EQUAL                                                                                              &kp GRAVE  &kp LS(GRAVE)       &kp DOT      &kp FSLH   &none            &none
-                &none      &kp K_APP           &none        &kp BSLH         &kp FSLH          &none  &kp GRAVE  &kp LS(GRAVE)               &to 0               &none  &kp LS(RBKT)  &kp LS(N0)      &none     &kp LS(N1)  &kp LS(BSLH)         &none   &none           &trans
- &magic LAYER_Magic 0       &kp CAPS           &none           &none            &none                   &kp SQT    &kp LS(SQT)  &mo LAYER_Numerics  &mo LAYER_Numerics  &kp LS(LBKT)  &kp LS(N9)                     &none         &none         &none   &none           &trans
+         &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV     &kp C_NEXT      &kp C_PP                                                                                                                              &kp C_MUTE  &kp C_VOL_DN     &kp C_VOL_UP          &none  &kp PAUSE_BREAK
+                &none         &none       &none          &none         &none       &none                                                                                                       &none           &none         &none            &none  &kp LS(GRAVE)  &kp PRINTSCREEN
+                &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                               &kp LS(EQUAL)        &kp HOME       &kp DOT          &kp END      &kp GRAVE   &kp SCROLLLOCK
+                &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW          &none            &none
+                &none     &kp K_APP       &none     &kp LS(N1)  &kp LS(BSLH)  &kp LS(N8)  &kp GRAVE  &kp LS(GRAVE)               &to 0               &none  &kp LS(RBKT)  &kp LS(N0)       &kp EQUAL        &kp BSLH      &kp FSLH            &none          &none           &trans
+ &magic LAYER_Magic 0      &kp CAPS       &none          &none         &none                &kp SQT    &kp LS(SQT)  &mo LAYER_Numerics  &mo LAYER_Numerics  &kp LS(LBKT)  &kp LS(N9)                           &none         &none            &none          &none           &trans
+            >;
+        };
+
+        layer_Magic {
+            bindings = <
+  &bt BT_CLR            &none            &none            &none            &none                                                                                  &none   &none   &none   &none     &bt BT_CLR_ALL
+       &none            &none            &none            &none            &none            &none                                                         &none   &none   &none   &none   &none              &none
+       &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                         &none   &none   &none   &none   &none              &none
+ &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                         &none   &none   &none   &none   &none        &bootloader
+  &sys_reset            &none            &none            &none            &none            &none   &bt_2   &bt_3         &none   &none   &none   &none   &none   &none   &none   &none   &none         &sys_reset
+       &none            &none            &none            &none            &none                    &bt_0   &bt_1  &out OUT_USB   &none   &none   &none           &none   &none   &none   &none  &to LAYER_Factory
+            >;
+        };
+
+        layer_Factory {
+            bindings = <
+ &kp NUMBER_0  &kp NUMBER_6  &kp NUMBER_2  &kp NUMBER_8  &kp NUMBER_4                                                                                                                  &kp NUMBER_4  &kp NUMBER_8  &kp NUMBER_2  &kp NUMBER_6  &kp NUMBER_0
+ &kp NUMBER_1  &kp NUMBER_7  &kp NUMBER_3  &kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_0                                                                                      &kp NUMBER_0  &kp NUMBER_5  &kp NUMBER_9  &kp NUMBER_3  &kp NUMBER_7  &kp NUMBER_1
+ &kp NUMBER_2  &kp NUMBER_8  &kp NUMBER_4  &kp NUMBER_0  &kp NUMBER_6  &kp NUMBER_1                                                                                      &kp NUMBER_1  &kp NUMBER_6  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_8  &kp NUMBER_2
+ &kp NUMBER_3  &kp NUMBER_9  &kp NUMBER_5  &kp NUMBER_1  &kp NUMBER_7  &kp NUMBER_2                                                                                      &kp NUMBER_2  &kp NUMBER_7  &kp NUMBER_1  &kp NUMBER_5  &kp NUMBER_9  &kp NUMBER_3
+ &kp NUMBER_4  &kp NUMBER_0  &kp NUMBER_6  &kp NUMBER_2  &kp NUMBER_8  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &kp NUMBER_3  &kp NUMBER_8  &kp NUMBER_2  &kp NUMBER_6  &kp NUMBER_0  &kp NUMBER_4
+ &kp NUMBER_5  &kp NUMBER_1  &kp NUMBER_7  &kp NUMBER_3  &kp NUMBER_9                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_9  &kp NUMBER_8  &kp NUMBER_7                &kp NUMBER_9  &kp NUMBER_3  &kp NUMBER_7  &kp NUMBER_1  &kp NUMBER_5
+            >;
+        };
+
+        layer_Mouse {
+            bindings = <
+ &trans          &trans          &trans          &trans           &trans                                                                                                                 &trans        &trans           &trans  &trans  &trans
+ &trans          &trans          &trans          &trans           &trans          &trans                                                                                 &trans          &trans        &trans           &trans  &trans  &trans
+ &trans          &trans  &msc SCRL_LEFT    &mmv MOVE_UP  &msc SCRL_RIGHT          &trans                                                                                 &trans       &mkp LCLK     &mkp MCLK        &mkp RCLK  &trans  &trans
+ &trans    &msc SCRL_UP  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_UP                                                                         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+ &trans  &msc SCRL_DOWN       &kp LG(X)       &kp LG(C)        &kp LG(V)  &msc SCRL_DOWN        &mkp LCLK       &mkp MCLK     &mkp RCLK  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans  &trans
+ &trans          &trans          &trans          &trans           &trans                  &kp LG(LA(F19))  &msc SCRL_DOWN  &msc SCRL_UP  &trans  &trans  &trans                          &trans        &trans           &trans  &trans  &trans
+            >;
+        };
+
+        layer_Numerics {
+            bindings = <
+  &none   &none          &none      &none          &none                                                                               &none     &none   &none   &none   &none
+  &none   &none          &none      &none          &none      &none                                                           &none    &none     &none   &none   &none   &none
+  &none   &none  &kp LS(EQUAL)  &kp MINUS  &kp LS(MINUS)  &kp EQUAL                                                   &kp LS(GRAVE)  &kp DOT  &kp FSLH   &none   &none   &none
+  &none  &kp N1         &kp N2     &kp N3         &kp N4     &kp N5                                                          &kp N6   &kp N7    &kp N8  &kp N9  &kp N0   &none
+  &none   &none          &none      &none          &none      &none   &none    &none   &none   &none   &none   &none          &none    &none     &none   &none   &none   &none
+  &none   &none          &none      &none          &none             &trans  &kp DEL   &none   &none  &trans   &none                   &none     &none   &none   &none   &none
+            >;
+        };
+        layer_Base {
+            bindings = <
+                            &kp F1    &kp F2   &kp F3    &kp F4        &kp F5                                                                                               &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
+                         &kp EQUAL    &kp N1   &kp N2    &kp N3        &kp N4  &kp N5                                                                        &kp N6         &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
+                           &kp TAB     &kp Q    &kp W     &kp E         &kp R   &kp T                                                                         &kp Y          &kp U      &kp I     &kp O     &kp P   &kp BSLH
+ &EscapeAndHyper LA(LG(LCTRL)) ESC     &kp A    &kp S     &kp D         &kp F   &kp G                                                                         &kp H          &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+                         &kp GRAVE     &kp Z    &kp X     &kp C         &kp V   &kp B  &kp LSHFT  &kp LCTRL    &lower    &lower        &kp SPACE  &kp RSHFT   &kp N          &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp PG_UP
+              &magic LAYER_Magic 0  &kp HOME  &kp END  &kp LEFT  &kp LA(LGUI)           &kp BSPC   &kp LALT  &kp LGUI  &kp RGUI  &mo LAYER_Mouse    &kp RET          &kp LA(RCTRL)   &kp DOWN  &kp LBKT  &kp RBKT  &kp PG_DN
+            >;
+        };
+
+        layer_Lower {
+            bindings = <
+         &kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV     &kp C_NEXT      &kp C_PP                                                                                                                              &kp C_MUTE  &kp C_VOL_DN     &kp C_VOL_UP          &none  &kp PAUSE_BREAK
+                &none         &none       &none          &none         &none       &none                                                                                                       &none           &none         &none            &none  &kp LS(GRAVE)  &kp PRINTSCREEN
+                &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                               &kp LS(EQUAL)        &kp HOME       &kp DOT          &kp END      &kp GRAVE   &kp SCROLLLOCK
+                &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW          &none            &none
+                &none     &kp K_APP       &none     &kp LS(N1)  &kp LS(BSLH)  &kp LS(N8)  &kp GRAVE  &kp LS(GRAVE)               &to 0               &none  &kp LS(RBKT)  &kp LS(N0)       &kp EQUAL        &kp BSLH      &kp FSLH            &none          &none           &trans
+ &magic LAYER_Magic 0      &kp CAPS       &none          &none         &none                &kp SQT    &kp LS(SQT)  &mo LAYER_Numerics  &mo LAYER_Numerics  &kp LS(LBKT)  &kp LS(N9)                           &none         &none            &none          &none           &trans
             >;
         };
 
