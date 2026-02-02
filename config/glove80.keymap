@@ -425,8 +425,8 @@
                 &none         &none       &none          &none         &none       &none                                                                                                       &none           &none         &none            &none  &kp LS(GRAVE)  &kp PRINTSCREEN
                 &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                               &kp LS(EQUAL)        &kp HOME       &kp DOT          &kp END      &kp GRAVE   &kp SCROLLLOCK
                 &none         &none   &kp GRAVE  &kp LS(GRAVE)       &kp DOT    &kp FSLH                                                                                              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW          &none            &none
-                &none     &kp K_APP       &none     &kp LS(N1)  &kp LS(BSLH)  &kp LS(N8)  &kp GRAVE  &kp LS(GRAVE)               &to 0               &none  &kp LS(RBKT)  &kp LS(N0)       &kp EQUAL        &kp BSLH      &kp FSLH            &none          &none           &trans
- &magic LAYER_Magic 0      &kp CAPS       &none          &none         &none                &kp SQT    &kp LS(SQT)  &mo LAYER_Numerics  &mo LAYER_Numerics  &kp LS(LBKT)  &kp LS(N9)                           &none         &none            &none          &none           &trans
+                &none     &kp K_APP       &none     &kp LS(N1)  &kp LS(BSLH)  &kp LS(N8)  &kp LSHFT  &kp LS(GRAVE)               &to 0               &none  &kp LS(RBKT)  &kp LS(N0)       &kp EQUAL        &kp BSLH      &kp FSLH            &none          &none           &trans
+ &magic LAYER_Magic 0      &kp CAPS       &none          &none         &none              &kp GRAVE    &kp LS(SQT)  &mo LAYER_Numerics  &mo LAYER_Numerics  &kp LS(LBKT)  &kp LS(N9)                           &none         &none            &none          &none           &trans
             >;
         };
 
