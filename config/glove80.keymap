@@ -391,8 +391,13 @@
             bindings = <&kp>, <&kp>;
             flavor = "tap-preferred";
         };
+        ShiftAndParens: ShiftAndParens {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
     };
-
 };
 
 /* Automatically generated macro definitions */
