@@ -63,6 +63,7 @@
 #define LAYER_Factory 3
 #define LAYER_Mouse 4
 #define LAYER_Numerics 5
+#define LAYER_Windows 6
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower
