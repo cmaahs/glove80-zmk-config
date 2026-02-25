@@ -397,6 +397,7 @@
 /* Custom Defined Behaviors */
 / {
     behaviors {
+        ZMK_TD_LAYER(td_LAYER_Windows, 6)
         EscapeAndHyper: EscapeAndHyper {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
