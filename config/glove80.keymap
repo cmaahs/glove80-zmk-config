@@ -112,8 +112,8 @@
 
         lower {
             bindings = <
-    &ug YELLOW    &ug YELLOW  &ug BLUE    &ug BLUE    &ug BLUE                                                                    &ug BLUE  &ug BLUE     &ug BLUE    &ug BLUE     &ug BLUE
-    &ug PURPLE &ug PINK &ug PINK   &ug   PINK &ug   PINK &ug PINK                                                             &ug ___ &ug ___  &ug ORANGE  &ug ORANGE &ug ORANGE  &ug RED
+    &ug YELLOW    &ug YELLOW  &ug BLUE    &ug BLUE    &ug BLUE                                                                    &ug YELLOW  &ug YELLOW     &ug YELLOW    &ug BLUE     &ug BLUE
+    &ug PURPLE &ug PINK &ug PINK   &ug   PINK &ug   PINK &ug RED                                                             &ug RED &ug ___  &ug ORANGE  &ug ORANGE &ug ORANGE  &ug RED
     &ug PURPLE &ug ___  &ug PURPLE    &ug PURPLE &ug PURPLE    &ug PURPLE                                                              &ug PURPLE &ug RED     &ug PURPLE        &ug RED       &ug PURPLE  &ug ___
     &ug PURPLE &ug ___  &ug PURPLE &ug    PURPLE &ug PURPLE &ug PURPLE                                                              &ug RED &ug RED     &ug RED        &ug RED       &ug PURPLE  &ug ___
     &ug   BLUE &ug YELLOW  &ug RED    &ug    PURPLE &ug    PURPLE &ug PURPLE  &ug RED &ug PURPLE   &ug GREEN  &ug ___ &ug PURPLE &ug ___ &ug PURPLE &ug PURPLE     &ug PURPLE        &ug ___       &ug    RED  &ug BLUE
