@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: recursive
       - uses: actions/checkout@v4
@@ -14,10 +14,10 @@ jobs:
           repository: darknao/zmk
           ref: rgb-layer-24.12
           path: src
-      - uses: cachix/install-nix-action@v25
+      - uses: cachix/install-nix-action@v31
         with:
           nix_path: nixpkgs=channel:nixos-22.05
-      - uses: cachix/cachix-action@v14
+      - uses: cachix/cachix-action@v17
         with:
           name: moergo-glove80-zmk-dev
           skipPush: true
@@ -30,3 +30,4 @@ jobs:
         with:
           name: glove80.uf2
           path: glove80.uf2
+
