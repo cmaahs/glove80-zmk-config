@@ -14,7 +14,7 @@ jobs:
           repository: darknao/zmk
           ref: rgb-layer-24.12
           path: src
-      - uses: cachix/install-nix-action@v31
+      - uses: cachix/install-nix-action@v25
         with:
           nix_path: nixpkgs=channel:nixos-22.05
       - uses: cachix/cachix-action@v17
