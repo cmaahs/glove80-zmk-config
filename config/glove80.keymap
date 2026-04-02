@@ -434,7 +434,12 @@
                 , <&kp SPACE>
                 , <&kp LS(SQT)>
                 , <&kp LS(SQT)>
-                , <&kp LS(N0)>;
+                , <&kp LS(N0)>
+                , <&kp LEFT_ARROW>
+                , <&kp LEFT_ARROW>
+                , <&kp LEFT_ARROW>
+                , <&kp LEFT_ARROW>
+                , <&kp LEFT_ARROW>;
         };
 
         // git add all
