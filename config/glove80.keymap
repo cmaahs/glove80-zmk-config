@@ -491,6 +491,38 @@
                 , <&kp M>
                 , <&kp R>;
         };
+
+        // Change to dev dir
+        cddev: cddev {
+            label = "&CDDEV";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C>
+                , <&kp D>
+                , <&kp SPACE>
+                , <&kp LS(GRAVE)>
+                , <&kp FSLH>
+                , <&kp D>
+                , <&kp E>
+                , <&kp V>
+                , <&kp FSLH>;
+        };
+
+        // Change to dev dir
+        cdsrc: cdsrc {
+            label = "&CDSRC";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C>
+                , <&kp D>
+                , <&kp SPACE>
+                , <&kp LS(GRAVE)>
+                , <&kp FSLH>
+                , <&kp S>
+                , <&kp R>
+                , <&kp C>
+                , <&kp FSLH>;
+        };
     };
 };
 
